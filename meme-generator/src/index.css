@@ -1,0 +1,160 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: rgb(184, 212, 227);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: white;
+  padding: 20px;
+}
+
+.header-image {
+  height: 160%;
+  position: relative;
+  left: -10px;
+  top: 1.5px;
+}
+
+.header-title {
+  font-size: 1.25rem;
+  margin-right: auto;
+  position: relative;
+  left: -20px;
+}
+
+.header-project {
+  font-size: .9rem;
+  font-weight: 800;
+}
+
+main {  
+  padding: 36px;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  background: white;
+}
+
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  text-align: left;
+  color: black;
+  width: 100%;
+}
+
+.form-input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+  height: 35px;
+  width: 100%;
+  margin-top: 2px;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.738);
+}
+.form-button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  height: 40px;
+  font-size: 16px ;
+}
+
+
+.meme-container {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: relative;
+}
+
+.meme-container > img {
+  max-width: 65%;
+  border-radius: 10px;
+  transition: filter .1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  max-height: 440px;
+}
+
+.meme-container > img:hover {
+  filter: brightness(50%);
+}
+
+.meme-container > button {
+  width: 100%;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 2px solid lightgray;
+  background-color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.3rem;
+}
+
+
+.meme-text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
